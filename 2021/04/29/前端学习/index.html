@@ -1,0 +1,1732 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="前端学习, CrazyHugh，github">
+    <meta name="description" content="为天地立心，为生民请命，为往圣继绝学，为万世开太平！">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>前端学习 | Hugh‘s Blog</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/avatar.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Hugh‘s Blog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>主页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/avatar.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Hugh‘s Blog</div>
+        <div class="logo-desc">
+            
+            为天地立心，为生民请命，为往圣继绝学，为万世开太平！
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			主页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/CrazyHugh" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/CrazyHugh" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">前端学习</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-04-29
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="前端学习"><a href="#前端学习" class="headerlink" title="前端学习"></a>前端学习</h1><h4 id="关于HTML"><a href="#关于HTML" class="headerlink" title="关于HTML"></a>关于HTML</h4><p>1.HTML指的是超文本标记语言，他是用来描述网页的一种语言</p>
+<p>HTML不是一种编辑语言，而是一种标记语言</p>
+<p>标记语言是一套标记标签</p>
+<h5 id="超文本"><a href="#超文本" class="headerlink" title="超文本"></a>超文本</h5><p>1、它可以加入图片、声音、动画、多媒体等超越了文本限制的内容</p>
+<p>2、它还可以从一个文件跳转到另一个文件，与世界各地主机的文件链接，即超级链接文本。</p>
+<h5 id="浏览器内核"><a href="#浏览器内核" class="headerlink" title="浏览器内核"></a>浏览器内核</h5><p>浏览器内核（渲染引擎）：负责读取网页内容，整理讯息，计算网页的显示方式并显示页面。      </p>
+<table>
+<thead>
+<tr>
+<th>浏览器</th>
+<th>内核</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IE</td>
+<td>Trident</td>
+<td>IE、360极速浏览器</td>
+</tr>
+<tr>
+<td>firefox</td>
+<td>Gecko</td>
+<td>火狐浏览器</td>
+</tr>
+<tr>
+<td>Safari</td>
+<td>Webkit</td>
+<td>苹果浏览器</td>
+</tr>
+<tr>
+<td>chrome</td>
+<td>Blink</td>
+<td>chrome、opera浏览器</td>
+</tr>
+</tbody></table>
+<p>国内浏览器都会采用Webkit/Blink内核。</p>
+<p>Web标准</p>
+<p>Web标准是由W3C组织和其他标准化之指定的一系列标准的集合。W3C是国际最著名的标准化组织。</p>
+<p>为什么需要Web标准</p>
+<p>遵循Web标准除了可以让不同的开发人员写出的页面更标准、更统一外,还有以下优点:</p>
+<p>更好的兼容性</p>
+<ul>
+<li>浏览器兼容</li>
+<li>向前兼容</li>
+</ul>
+<p>更好的语义<br>更简洁的代码<br>更强的功能</p>
+<h5 id="Web标准的构成"><a href="#Web标准的构成" class="headerlink" title="Web标准的构成"></a>Web标准的构成</h5><p>主要包括结构、样式和行为三个方面，主要对应HTML、CSS、Javascript。</p>
+<p>Web标准提出的最佳体验方案：结构、样式、行为相分离，即分别写入不同的文件中。</p>
+<h3 id="HTML标签"><a href="#HTML标签" class="headerlink" title="HTML标签"></a>HTML标签</h3><h4 id="1、HTML语法规范"><a href="#1、HTML语法规范" class="headerlink" title="1、HTML语法规范"></a>1、HTML语法规范</h4><h5 id="1-基本概述"><a href="#1-基本概述" class="headerlink" title="1.基本概述"></a>1.基本概述</h5><p>1.HTML标签是由尖括号包围的关键词,例如<html>。</p>
+<p>2.HTML标签通常是成对出现的,例妇<html>和</html> , 我们称为双标签。标签对中的第一个标签是开始标签,第二个标签是结束标签。</p>
+<p>3.有些特殊的标签必须是单个标签(极少情况),我们称为单标签。例如 <br/></p>
+<h5 id="2-标签关系"><a href="#2-标签关系" class="headerlink" title="2.标签关系"></a>2.标签关系</h5><p>双标签关系可以分为包含关系和并列关系。</p>
+<p>包含关系</p>
+<pre><code>&lt;head&gt;
+    &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+</code></pre>
+<p>并列关系</p>
+<pre><code>&lt;head&gt;&lt;/head&gt;
+&lt;body&gt;&lt;/body&gt;
+</code></pre>
+<h4 id="2、HTML基本结构标签"><a href="#2、HTML基本结构标签" class="headerlink" title="2、HTML基本结构标签"></a>2、HTML基本结构标签</h4><p>每个网页都会有一个基本的结构标签(也称为骨架标签) , 面内容也是在这些基本标签上书写。<br>HTML页面也称为HTML文档。</p>
+<table>
+<thead>
+<tr>
+<th>标签名</th>
+<th>定义</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><html></html></td>
+<td>HTML标签</td>
+<td>页面中最大的标签,我们称为根标签</td>
+</tr>
+<tr>
+<td><head></head></td>
+<td>文档的头部</td>
+<td>注意在head标签中我们必须要设置的标签是title</td>
+</tr>
+<tr>
+<td><titile></title></td>
+<td>文档的标题</td>
+<td>让页面拥有一个属于自己的网页标题</td>
+</tr>
+<tr>
+<td><body></body></td>
+<td>文档的主体</td>
+<td>元素包含文档的所有内容，页面内容基本都是放到body里面的</td>
+</tr>
+</tbody></table>
+<pre><code>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My page&lt;/title&gt;
+    &lt;/head&gt;
+     &lt;body&gt;
+        Hello!HTML!
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+<p>开发工具</p>
+<p>HBuilder、WebStorm、VSCode等</p>
+<p>以vscode为例，创建一个html文件</p>
+<hr>
+<p>VSCode的使用</p>
+<p>1.双击打开软件。<br>2.新建文件(Ctrl+N )。<br>3.保存( Ctrl+ S ),注意移动要保存为.html文件<br>4.Ctrl+加号键, Ctrl +减号键可以放大缩小视图<br>5.生成页面骨架结构。输入!  按下Tab键即可生成。<br>6.利用插件在浏览器中预览页面:单击鼠标右键,在弹出出口中点击”Open In Default Browser”。</p>
+<hr>
+<h5 id="文档类型声明标"><a href="#文档类型声明标" class="headerlink" title="文档类型声明标"></a>文档类型声明标</h5><p>文档类型声明,作用就是告诉浏览器使用哪种HTML版本来显示网页。</p>
+<pre><code>&lt; !DOCTYPE html&gt;
+</code></pre>
+<p>这句代码的意思是:当前页面采取的是HTML5版本来显示网页。</p>
+<ol>
+<li>声明位于文档中的最前面的位置,处于标签之前。</li>
+<li>这并不是一个 HTML标签,它就是文档类型声明标签。</li>
+</ol>
+<h5 id="lang语言种类"><a href="#lang语言种类" class="headerlink" title="lang语言种类"></a>lang语言种类</h5><pre><code>&lt;html lang=&quot;zh-CN&quot;&gt;
+</code></pre>
+<p>用来定义当前文档显示的语言。</p>
+<ol>
+<li>en定义语言为英语</li>
+<li>zh-CN定义语言为中文</li>
+</ol>
+<p>简单来说,定义为en就是英文网页,定义为zh-CN就是中文网页。但是值得注意的是，文档显示时，即便定义语言为en，也可以显示中文；同理，定义语言为zh-CN时，也可以显示英文。</p>
+<p>字符集</p>
+<p>字符集(Character set)是多个字符的集合。以便计算机能够识别和存储各种文字。<br>在<head>标签内,可以通过<meta>标签的charset属性来规定HTML文档应该使用哪种字符编码。</p>
+<meta charset=" UTF-8" />
+
+<p>charset常用的值有: GB2312、BIG5、 GBK和UTF-8 ,其中UTF-8也被称为万国码,基本包含了全世界所有国家需要用到的字符。</p>
+<hr>
+<h4 id="3、HTML常用标签"><a href="#3、HTML常用标签" class="headerlink" title="3、HTML常用标签"></a>3、HTML常用标签</h4><h5 id="1-语义标签"><a href="#1-语义标签" class="headerlink" title="1.语义标签"></a>1.语义标签</h5><pre><code>标题标签&lt;h1&gt;-&lt;h6&gt;
+&lt;h1&gt;标题&lt;/h1&gt;
+</code></pre>
+<p>HTML提供了6个等级的网页标题，作为标题使用。</p>
+<p>特点：</p>
+<p>-加了标题的文字会变的加粗，一个标题独占一行。</p>
+<p>-从h1到h6，字号由大到小依次递减，并且依据重要性递减。</p>
+<pre><code>段落标签&lt;p&gt;
+&lt;p&gt;段落&lt;/p&gt;
+</code></pre>
+<p>在网页中，段落标签可以将网页分为若干个段落，使得文字更加有条理地分段显示，</p>
+<p>特点：</p>
+<p>-文本在一个段落中会根据浏览器窗口的大小自动换行。</p>
+<p>-段落和段落之间会有较大的间距。</p>
+<pre><code>换行标签&lt;br/&gt;
+</code></pre>
+<p>在HTML中，一个段落中的文字从左到右依次排列，直到浏览器窗口的右端，才会自动换行，。只有使用换行标签才能使文本强制换行。</p>
+<p>特点：</p>
+<p>-换行标签是个单标签。</p>
+<p>-换行标签只是开始新的一行，不会产生段落和段落之间的间距。</p>
+<h5 id="2-文本格式化标签"><a href="#2-文本格式化标签" class="headerlink" title="2.文本格式化标签"></a>2.文本格式化标签</h5><p>文本格式化标签，使文字以特殊的方式显示。</p>
+<table>
+<thead>
+<tr>
+<th>语义</th>
+<th>标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>加粗</td>
+<td><code>&lt;strong&gt;&lt;/strong&gt;</code>或者<code>&lt;b&gt;&lt;/b&gt;</code></td>
+</tr>
+<tr>
+<td>倾斜</td>
+<td><code>&lt;em&gt;&lt;/em&gt;</code>或者<code>&lt;i&gt;&lt;/i&gt;</code></td>
+</tr>
+<tr>
+<td>删除线</td>
+<td><code>&lt;del&gt;&lt;/del&gt;</code>或者<code>&lt;s&gt;&lt;/s&gt;</code></td>
+</tr>
+<tr>
+<td>下划线</td>
+<td><code>&lt;ins&gt;&lt;/ins&gt;</code>或者<code>&lt;u&gt;&lt;/u&gt;</code></td>
+</tr>
+</tbody></table>
+<!--其中<strong><em><del><ins>的语义更为强烈，更推荐使用。-->
+
+
+
+<h5 id="3-lt-div-gt-和-lt-span-gt-标签"><a href="#3-lt-div-gt-和-lt-span-gt-标签" class="headerlink" title="3.&lt;div&gt;和&lt;span&gt;标签"></a>3.<code>&lt;div&gt;</code>和<code>&lt;span&gt;</code>标签</h5><p><code>&lt;div&gt;</code>是<code>&lt;span&gt;</code>没有语义的，它们代表的是用来装内容的盒子。<br>div 是division的缩写，表示分割、分区；span 意为跨度、跨距。<br>其语法如下：</p>
+<pre><code>&lt;div&gt;分区盒子&lt;/div&gt;&lt;span&gt;跨度盒子&lt;/span&gt;
+</code></pre>
+<p>特点：</p>
+<p>1、<code>&lt;div&gt;</code> 标签用来布局，但是一般情况下一行只能放一个<code>&lt;div&gt;</code>。</p>
+<p>2、<code>&lt;span&gt;</code> 标签用来布局，一行上可以多个<code>&lt;span&gt;</code>。</p>
+<h5 id="4-图像标签"><a href="#4-图像标签" class="headerlink" title="4.图像标签"></a>4.图像标签</h5><p>在HTML标签中，<code>&lt;img&gt;</code>标签用于定义HTML页面中的图像。</p>
+<pre><code>&lt;img src=&quot;图像URL&quot;/&gt;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th>属性值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">src</td>
+<td>图片路径</td>
+<td>必须属性</td>
+</tr>
+<tr>
+<td align="left">alt</td>
+<td>文本</td>
+<td>替换文本。图像不能显示时出现来代替图像的文字</td>
+</tr>
+<tr>
+<td align="left">title</td>
+<td>文本</td>
+<td>提示文本。鼠标悬浮在图像上时显示的文字</td>
+</tr>
+<tr>
+<td align="left">width</td>
+<td>像素</td>
+<td>设置图像的宽度</td>
+</tr>
+<tr>
+<td align="left">height</td>
+<td>像素</td>
+<td>设置图像的高度</td>
+</tr>
+<tr>
+<td align="left">border</td>
+<td>像素</td>
+<td>设置图像的边框粗细</td>
+</tr>
+</tbody></table>
+<h6 id="图像标签属性注意点"><a href="#图像标签属性注意点" class="headerlink" title="图像标签属性注意点:"></a>图像标签属性注意点:</h6><p>①图像标签可以拥有多个属性,必须写在标签名的后面。<br>②属性之间不分先后顺序,标签名与属性、属性与属性之间均以空格分开。<br>③属性采取键值对的格式,即key= “value” 的格式,属性=“属性值”。</p>
+<h5 id="5-路径"><a href="#5-路径" class="headerlink" title="5.路径"></a>5.路径</h5><h6 id="目录文件夹和根目录"><a href="#目录文件夹和根目录" class="headerlink" title="目录文件夹和根目录"></a>目录文件夹和根目录</h6><p>​    实际工作中,我们需要对大量文件进行系统地管理,因此我们需要一个文件夹来管理他们。</p>
+<p>​    目录文件夹:就是普通文件夹,里面只不过存放了我们做页面所需要的相关素材,比如html文                              件、图片等。</p>
+<p>​    根目录:开目录文件夹的第一层就是根目录。</p>
+<h6 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h6><p>​    页面中需要添加许多的元素，而要查找这些元素，就需要采用“路径”的方式来指定图像文件    的位置。</p>
+<p>​    路径可分为“相对路径”和“绝对路径”。</p>
+<p>​    <strong>相对路径</strong>：以引用文件所在位置为参考基础，而建立出的目录路径，即引用文件相对于 </p>
+<p>​                        HTML文件的位置。</p>
+<table>
+<thead>
+<tr>
+<th>相对路径分类</th>
+<th>符号</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>同一级路径</td>
+<td></td>
+<td>图像文件位于HTML文件同一级， src=”image.jpg”</td>
+</tr>
+<tr>
+<td>下一级路径</td>
+<td>/</td>
+<td>图像文件位于HTML文件下一级， src=”images/image.jpg”</td>
+</tr>
+<tr>
+<td>上一级路径</td>
+<td>…/</td>
+<td>图像文件位于HTML文件上一级， src=”../image.jpg”</td>
+</tr>
+</tbody></table>
+<p>​    <strong>绝对路径</strong>：指目录下的绝对位置，通常是从盘符开始的路径。</p>
+<p>​                        例如，D:\web\images\image.jpg</p>
+<p>​    <strong>注意</strong>：相对路径中每一级之间用”/“隔开，而绝对路径中每一级之间用”\“隔开。</p>
+<p>​    另外，也可以用完整的网络地址当做路径。</p>
+<pre><code>&lt;!-- 网络图片的地址 --&gt;&lt;img src=&quot;http://image.thepaper.cn/wap/image/12/583/251.jpg&quot;&gt;&lt;!-- 本地图片绝对路径 --&gt;
+&lt;img src=&quot;C:\Users\Administrator\Desktop\图片\1gif.gif&quot; title=&#39;本地图片&#39; alt=&#39;当资源加载失败时候，会显示我&#39;&gt;
+&lt;!-- 本地图片相对路径 --&gt;&lt;img src=&quot;img/image.jpg&quot;&gt;
+</code></pre>
+<h5 id="6-超链接标签"><a href="#6-超链接标签" class="headerlink" title="6.超链接标签"></a>6.超链接标签</h5><h6 id="1、链接的语法格式"><a href="#1、链接的语法格式" class="headerlink" title="1、链接的语法格式"></a>1、链接的语法格式</h6><pre><code>&lt;a href=&quot;目标链接&quot; target=&quot;目标窗口的弹出方式&quot;&gt;文本或图像&lt;/a&gt;
+</code></pre>
+<p>单词anchor的缩写，意思是“锚”。</p>
+<p>两个属性的作用如下：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>href</td>
+<td>用于指定链接目标的url地址。（必须属性）                                                                                  当标签有了href 属性时，便具有了超链接功能。</td>
+</tr>
+<tr>
+<td>target</td>
+<td>用于指定链接页面的打开方式。                                                                                    _self为默认值，_blank为在新窗口中打开方式。</td>
+</tr>
+</tbody></table>
+<!--注：_self打开方式，即同一页面跳转，_blank打开方式，即弹出新的页面-->
+
+<h6 id="2、链接的类别"><a href="#2、链接的类别" class="headerlink" title="2、链接的类别"></a>2、链接的类别</h6><p>1.外部链接：<code>&lt;a href=&quot;http//www.baidu.com&quot;&gt;</code>百度<code>&lt;/a&gt;</code>。</p>
+<p>2.内部链接：网站内部页面之间的相互链接。直接链接内部页面名称即可，例如<code>&lt;a href=&quot;index.html&quot;&gt;</code>首页<code>&lt;/a&gt;</code>。</p>
+<p>3.空链接: 如果当时没有确定链接目标时, <code>&lt;a href=&quot;#&quot;&gt;</code>空链接<code>&lt;/a&gt;</code>。</p>
+<p>4.下载链接: 如果href里面地址是一个文件或者压缩包， 会下载这个文件。</p>
+<p>5.网页元素链接:在网页中的各种网页元素,如文本、图像、表格、音频、视频等都可以添加超链接。</p>
+<p>6.锚点链接:我们点击链接,可以快速定位到页面中的某个位置。</p>
+<p>●在链接文本的href属性中,设置属性值为#铭字的形式,如<code>&lt;a href=&quot; #two&quot;&gt;</code>第2集<code>&lt;/a&gt;</code><br>●找到目标位置标签,面添加-个id属性=刚才的名字,如: <code>&lt;h3 id= &quot;two&quot; &gt;</code>第2集介绍<code>&lt;/h3&gt;</code></p>
+<h5 id="7-表格标签"><a href="#7-表格标签" class="headerlink" title="7.表格标签"></a>7.表格标签</h5><h6 id="1-表格的主要作用"><a href="#1-表格的主要作用" class="headerlink" title="1.表格的主要作用"></a>1.表格的主要作用</h6><p>表格主要用于显示展示数据,因为它可以让数据显示的非常的规整,可读性非常好。</p>
+<p>同时，前端开发人员也经常用表格来布局，以使得排版更加整齐。</p>
+<h6 id="2-表格的基本语法"><a href="#2-表格的基本语法" class="headerlink" title="2.表格的基本语法"></a>2.表格的基本语法</h6><pre><code>&lt;table&gt;    &lt;tr&gt;        &lt;td&gt;单元格内的文字&lt;/td&gt;        ...    &lt;/tr&gt;    ...    &lt;/table&gt;
+</code></pre>
+<p>1.<code>&lt;table&gt;&lt;/table&gt;</code>是用来定义表格的标签。</p>
+<p>2.<code>&lt;tr&gt;&lt;/tr&gt;</code>标签用来定义表格中的行，必须嵌套在<code>&lt;table&gt; &lt;/table&gt;</code>标签中。</p>
+<p>3.<code>&lt;td&gt; &lt;/td&gt;</code>朋定义表格中的元格,必须嵌套在<code>&lt;tr&gt; &lt;/tr&gt;</code>标签中。</p>
+<p>4.字母td指表格数据( table data ) ,即数据单元格的内容。</p>
+<h6 id="3-表头单元格标签"><a href="#3-表头单元格标签" class="headerlink" title="3.表头单元格标签"></a>3.表头单元格标签</h6><ul>
+<li>一般表头单元格位于表格的第一行或第一 列 ,表头单元格里面的文本内容加粗居中显示。</li>
+<li><code>&lt;th&gt;</code>标签表示HTML表格的表头部分(table head的缩写)。</li>
+</ul>
+<pre><code>&lt;table&gt;    &lt;tr&gt;        &lt;th&gt;单元格内的文字&lt;/th&gt;        ...    &lt;/tr&gt;    ...    &lt;/table&gt;
+</code></pre>
+<h6 id="4-表格属性"><a href="#4-表格属性" class="headerlink" title="4.表格属性"></a>4.表格属性</h6><table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>属性值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>align</td>
+<td>left、center、right</td>
+<td>规定表格相对周围元素的对齐方式。</td>
+</tr>
+<tr>
+<td>border</td>
+<td>像素值或””</td>
+<td>规定表格是否拥有边框，默认为””，即没有边框。</td>
+</tr>
+<tr>
+<td>cellpadding</td>
+<td>像素值</td>
+<td>规定单元边沿与其内容之间的间隔，默认1像素。</td>
+</tr>
+<tr>
+<td>cellspacing</td>
+<td>像素值</td>
+<td>规定单元格之间的间隔，默认2像素。</td>
+</tr>
+<tr>
+<td>width/height</td>
+<td>像素值或百分比</td>
+<td>规定表格的宽度和高度。</td>
+</tr>
+</tbody></table>
+<h6 id="5-表格结构标签"><a href="#5-表格结构标签" class="headerlink" title="5.表格结构标签"></a>5.表格结构标签</h6><ul>
+<li><p>使用场景:因为表格可能很长，为了更好的表示表格的语义,可以将表格分割成表格头部和表格主体两大部分。</p>
+</li>
+<li><p>在表格标签中,分别用 <code>&lt;thead&gt;</code>标签表格的头部区域、<code>&lt;tbody&gt;</code> 标签表格的主体区域。</p>
+</li>
+<li><p><code>&lt;thead&gt;</code>内部必须拥有 <code>&lt;tr&gt;</code>标签，一般是位于第一行。</p>
+</li>
+<li><p><code>&lt;tbody&gt;</code>用于定义表格的主题，主要用于放数据本体。</p>
+<pre><code>&lt;table&gt;&lt;thead&gt;    &lt;tr&gt;        &lt;th&gt;单元格内的文字&lt;/th&gt;        ...    &lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;    ...&lt;/tbody&gt;    &lt;/table&gt;
+</code></pre>
+</li>
+</ul>
+<h6 id="6-合并单元格"><a href="#6-合并单元格" class="headerlink" title="6.合并单元格"></a>6.合并单元格</h6><ul>
+<li><p>跨行合并：rowspan=“合并单元格的个数”</p>
+<p>​                    最上侧单元格为目标单元格，写合并代码。</p>
+</li>
+<li><p>跨列合并：colspan=“合并单元格的个数”</p>
+<p>​                    最左侧单元格为目标单元格，写合并代码。</p>
+<p>1、先确定是跨行还是跨列合并。<br>2、找到目标单元格.写上合并方式=合并的单元格数量。 <code>&lt;td colspan= &quot;2”&gt;&lt;/td&gt;.</code><br>3、删除多余的单元格。</p>
+</li>
+</ul>
+<h5 id="8-列表标签"><a href="#8-列表标签" class="headerlink" title="8.列表标签"></a>8.列表标签</h5><ul>
+<li>列表用来布局，列表最大的特点就是整齐、整洁、有序,它作为布局会更加自由和方便。</li>
+<li>根据使用情景不同,列表可以分为三大类:无序列表、有序列表和自定义列表。</li>
+</ul>
+<h6 id="1-无序列表"><a href="#1-无序列表" class="headerlink" title="1.无序列表"></a>1.无序列表</h6><p><code>&lt;ul&gt;</code>HTML页面中项目的无序列表,一般会以项目符号 呈现列表项,而列表项使用 <code>&lt;li&gt;</code> 标签定义<br>无序列表的基本语法格式如下:</p>
+<pre><code>&lt;ul&gt;&lt;li&gt;列表项1&lt;/li&gt;&lt;li&gt;列表项2&lt;/li&gt;&lt;1i&gt;列表项3&lt;/1i&gt;...&lt;/ul&gt;
+</code></pre>
+<p>1.无序列表的各个列表项之间没有顺序级别之分,是并列的。</p>
+<p>2.<code>&lt;ul&gt;&lt;/ul&gt;</code>中只能嵌套 <code>&lt;li&gt;&lt;/li&gt;</code>,直接在<code>&lt;ul&gt;&lt;/ul&gt;</code>标签中输入其他标签或者文字的做法是不被允许的。</p>
+<p>3.<li> 与</li>之间相当于一个容器,可以容纳所有元素。</p>
+<h6 id="2-有序列表"><a href="#2-有序列表" class="headerlink" title="2.有序列表"></a>2.有序列表</h6><p>有序列表即为有排列顺序的列表,賂个列表项会按照-定的顺序排列定义。<br>在HTML标签中, <code>&lt;ol&gt;</code>标签用于定义有序列表,列表排序以数字来示,并且使用<code>&lt;li&gt;</code> 标签来定义列表项。<br>有序列表的基本语法格式如下:</p>
+<pre><code>&lt;ol&gt;    &lt;li&gt;列表项1&lt;/1i&gt;    &lt;1i&gt;列表项2&lt;/1i&gt;    &lt;li&gt;列表项3&lt;/li&gt;    ...&lt;/ol&gt;
+</code></pre>
+<h6 id="3-自定义列表"><a href="#3-自定义列表" class="headerlink" title="3.自定义列表"></a>3.自定义列表</h6><p>自定义列表常用语对术语进行解释和描述，定义列表的列表项前没有任何项目符号。</p>
+<p>在HTML标签中, <code>&lt;dI&gt;</code> 标签用于定义描述列表(或定义列表) , 该标签会与<code>&lt;dt&gt;</code> (定义项目/名字)和<code>&lt;dd&gt;</code> (描述每一个项目/名字) 一起使用。<br>其基本语法如下:</p>
+<pre><code>&lt;dl&gt;    &lt;dt&gt;名词1&lt;/dt&gt;    &lt;dd&gt;名词1解释1&lt;/dd&gt;    &lt;dd&gt;名词1解释2&lt;/dd&gt;&lt;/d1&gt;
+</code></pre>
+<ol>
+<li><code>&lt;dl&gt;&lt;/dl&gt;</code>里面只能包含<code>&lt;dt&gt;、&lt;dd&gt;</code></li>
+<li><code>&lt;dt&gt;</code> 和<code>&lt;dd&gt;</code>个数没有限制,经常是一个<code>&lt;dt&gt;</code> 对应多个<code>&lt;dd&gt;</code>.</li>
+</ol>
+<h5 id="9-表单标签"><a href="#9-表单标签" class="headerlink" title="9.表单标签"></a>9.表单标签</h5><p>一个完整的表单通常由表单域、表单控件(表单元素)和提示信息3个部分组成。</p>
+<h6 id="表单域"><a href="#表单域" class="headerlink" title="表单域"></a>表单域</h6><p>表单域是一个包含表单元素的区域。</p>
+<p>在HTML标签中，<code>&lt;form&gt;</code> 标签用于定义表单域,以实现用户信息的收集和传递。</p>
+<p><code>&lt;form&gt;</code>会把它范围内的表单元素信息提交给服务器。</p>
+<pre><code>&lt;form action=&quot;url地址”method=&quot;提交方式&quot; name=&quot;表单域名称&quot;&gt;    表单控件&lt;/form&gt;
+</code></pre>
+<p>在书写表单时，需要先用一个<code>&lt;form&gt;</code>声明一个表单域。</p>
+<h6 id="表单控件"><a href="#表单控件" class="headerlink" title="表单控件"></a>表单控件</h6><h6 id="1-lt-input-gt-表单元素"><a href="#1-lt-input-gt-表单元素" class="headerlink" title="1.&lt;input&gt;表单元素"></a><strong>1.<code>&lt;input&gt;</code>表单元素</strong></h6><p><code>&lt;input&gt;</code>标签用于收集用户信息。</p>
+<p>在<code>&lt;input&gt;</code>标签中，包含一个type属性，根据不同的type属性值，输入字段拥有很多种形式（例如 文本、复选框、掩码后的文本控件、单选按钮、按钮等）</p>
+<table>
+<thead>
+<tr>
+<th>type标签值</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>text</td>
+<td>明文输入</td>
+</tr>
+<tr>
+<td>password</td>
+<td>密文输入</td>
+</tr>
+<tr>
+<td>file</td>
+<td>文件传输</td>
+</tr>
+<tr>
+<td>button</td>
+<td>普通按钮</td>
+</tr>
+<tr>
+<td>submit</td>
+<td>会将表单内容交给action或者后端</td>
+</tr>
+<tr>
+<td>reset</td>
+<td>重置按钮</td>
+</tr>
+<tr>
+<td>image</td>
+<td>图片按钮</td>
+</tr>
+<tr>
+<td>checkbox</td>
+<td>复选框</td>
+</tr>
+<tr>
+<td>radio</td>
+<td>单选按钮</td>
+</tr>
+<tr>
+<td>hidden</td>
+<td>隐藏字段</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>submit属性</p>
+<p>提交按钮会把表单数据发送到服务器，可通过value值改变提交按钮里的值。</p>
+<pre><code>&lt;input type=&quot;submit&quot; value=&quot;提交&quot;&gt;
+</code></pre>
+<p>另外，在<code>&lt;form&gt;</code>里面增加action和method属性。</p>
+<pre><code>&lt;form action=&quot;xxx.php”method=&quot;get&quot; &gt;
+</code></pre>
+<p>这样，点击submit之后，表单数据就会被提交到这个页面。</p>
+</li>
+<li><p>reset属性</p>
+<p>重置按钮会将表单中的数据重置，例如常规表单中的“重新填写”按钮。</p>
+<pre><code>&lt;input type=&quot;reset&quot; value=&quot;重新填写&quot;&gt;
+</code></pre>
+<p>点击重置按钮，可以将表单中的数据还原至初始状态。</p>
+</li>
+<li><p>button属性</p>
+<p>普通按钮，不会提交数据，但是可以结合js触发某个功能。</p>
+<pre><code>&lt;input type=&quot;button&quot; value=&quot;发送短信验证码&quot;&gt;
+</code></pre>
+</li>
+<li><p>file属性</p>
+<p>文件域，可以将本地文件上传至表单。</p>
+<pre><code>&lt;input type=&quot;file&quot; value=&quot;选择文件&quot;&gt;
+</code></pre>
+</li>
+</ul>
+<p><strong>除了type属性值之外，表单控件还有很多属性</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>name</td>
+<td>必须存在，作为提交数据的key</td>
+</tr>
+<tr>
+<td>value</td>
+<td>代表值（写了就是默认值）</td>
+</tr>
+<tr>
+<td>checked</td>
+<td>设置默认选择项</td>
+</tr>
+<tr>
+<td>maxlength</td>
+<td>设置输入字段中字符的最大长度</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>name属性</p>
+<p>比如在<code>&lt;input&gt;</code>的type值为radio时，要给同一类的单选按钮增加相同的属性</p>
+<p>以性别为例</p>
+</li>
+</ul>
+<pre><code>性别： 男&lt;input type=&quot;radio&quot; name=&quot;sex&quot;&gt;      女&lt;input type=&quot;radio&quot; name=&quot;sex&quot;&gt;
+</code></pre>
+<p>​    这样才能实现在性别这一类选项中只能单选的效果，否则仍可多选，单选按钮就没有意义了。</p>
+<ul>
+<li><p>value属性</p>
+<p>value中的值会只显示在输入框内；而单选按钮和复选按钮等的值在被用户选择后会被返回到后台，可以被后台人员查看。</p>
+<p>而根据要求，一般所有的表单控件都需要有name和value属性。</p>
+</li>
+<li><p>checked属性</p>
+<pre><code>性别： 男&lt;input type=&quot;radio&quot; name=&quot;sex&quot;&gt;      女&lt;input type=&quot;radio&quot; name=&quot;sex&quot; checked=&quot;checked&quot;&gt;
+</code></pre>
+<p>主要针对单选和复选按钮，可以设置默认选择项。</p>
+</li>
+<li><p>maxlength属性</p>
+<p>设置输入字段中字符的最大长度，比如设置“9”，便只能输入9个字符，超过长度便不能再输入。</p>
+<pre><code>用户：&lt;input type=&quot;text&quot; name=&quot;user&quot; maxlength=&quot;9&quot;&gt;
+</code></pre>
+</li>
+</ul>
+<h6 id="2-lt-label-gt-标签"><a href="#2-lt-label-gt-标签" class="headerlink" title="2.&lt;label&gt;标签"></a>2.<code>&lt;label&gt;</code>标签</h6><p>标注标签，可以用于绑定一个表单元素当点击<code>&lt;label&gt;</code>标签内的文本时,浏览器就会自动将焦点(光标)转到或者选择对应的表单元素上。</p>
+<pre><code>&lt;label for=&quot;sex&quot;&gt;男&lt;/label&gt;&lt;input type=&quot;radio&quot; name=&quot;sex id=&quot;sex&quot; /&gt;
+</code></pre>
+<p><code>&lt;label&gt;</code>标签的for属性应当与相关元素的id属性相同。</p>
+<p>即点击某个文本就可以代替点击按钮的功能，可以避免按钮太小使得用户难以点到。</p>
+<h6 id="3-lt-select-gt-标签"><a href="#3-lt-select-gt-标签" class="headerlink" title="3.&lt;select&gt;标签"></a>3.<code>&lt;select&gt;</code>标签</h6><p>下拉标签，在页面中,如果有多个选项让用户选择,并且想要节约页面空间时, 我们可以使用<code>&lt;select&gt;</code>标签控件定义下拉列表。</p>
+<pre><code>籍贯：&lt;select&gt;    &lt;option&gt;北京&lt;/option&gt;    &lt;option&gt;上海&lt;/option&gt;    &lt;option&gt;成都&lt;/option&gt;&lt;/select&gt;
+</code></pre>
+<p>注：1. <code>&lt;select&gt;</code>中至少包含一对<code>&lt;option&gt;</code>。</p>
+<p>​        2.在<code>&lt;option&gt;</code>中定义selected =”selected “时，当前项即为默认选中项。</p>
+<h6 id="4-lt-textarea-gt-标签"><a href="#4-lt-textarea-gt-标签" class="headerlink" title="4.&lt;textarea&gt;标签"></a>4.<code>&lt;textarea&gt;</code>标签</h6><p>文本域标签，当用户输入内容较多的情况下,我们就不能使用文本框表单,此时我们可以使用<code>&lt;textarea&gt;</code> 标签。即用于定义多行文本输入的控件。常用于留言板和评论模块。</p>
+<pre><code>留言：&lt;textarea row=&quot;2&quot; cols=&quot;10&quot;&gt;     默认文字     &lt;/textarea&gt;
+</code></pre>
+<p>注：1.通过<code>&lt;textarea&gt;</code>标签可以轻松地创建多行文本输入框。</p>
+<p>​        2.cols= “每行中的字符数”, rows= “ 显示的行数”, 但在实际开发中一般不会使用，通常是用CSS来改变大小。</p>
+<pre><code>&lt;body&gt;     &lt;form action=&quot;&quot; method=&quot;get&quot;&gt;         用户：&lt;input type=&quot;text&quot; name=&quot;user&quot;&gt;&lt;br&gt;         密码：&lt;input type=&quot;password&quot; name=&quot;pwd&quot;&gt;&lt;br&gt;         性别：&lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;1&quot; checked&gt;男               &lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;0&quot; &gt;女&lt;br&gt;         爱好：&lt;input type=&quot;checkbox&quot; name=&quot;like&quot; value=&quot;2&quot; checked&gt;唱              &lt;input type=&quot;checkbox&quot; name=&quot;like&quot; value=&quot;3&quot;&gt;跳              &lt;input type=&quot;checkbox&quot; name=&quot;like&quot; value=&quot;4&quot;&gt;rap              &lt;input type=&quot;checkbox&quot; name=&quot;like&quot; value=&quot;5&quot;&gt;篮球&lt;br&gt;         地址：             &lt;select name=&quot;address&quot;&gt;                 &lt;option value=&quot;0&quot;&gt;成都&lt;/option&gt;                 &lt;option value=&quot;1&quot;&gt;北京&lt;/option&gt;                 &lt;option value=&quot;2&quot; selected=&quot;&quot;&gt;上海&lt;/option&gt;             &lt;/select&gt;&lt;br&gt;         自我介绍：             &lt;textarea name=&quot;info&quot;&gt;我喜欢唱跳rap和篮球&lt;/textarea&gt;&lt;br&gt;         秘密：&lt;input type=&quot;hidden&quot; name=&quot;id&quot; value=&quot;111122221&quot;&gt;&lt;br&gt;         &lt;input type=&quot;submit&quot; value=&quot;提交1&quot;&gt;         &lt;button&gt;提交2&lt;/button&gt;         &lt;input type=&quot;button&quot; value=&quot;普通按钮&quot;&gt;         &lt;input type=&quot;reset&quot; value=&quot;重置按钮&quot;&gt;&lt;br&gt;         &lt;input type=&quot;image&quot; value=&quot;图片按钮&quot; src=&quot;image.jpg&quot;&gt;     &lt;/form&gt;&lt;/body&gt;
+</code></pre>
+<hr>
+<h3 id="4、注释与特殊字符"><a href="#4、注释与特殊字符" class="headerlink" title="4、注释与特殊字符"></a>4、注释与特殊字符</h3><h5 id="1-注释"><a href="#1-注释" class="headerlink" title="1.注释"></a>1.注释</h5><pre><code>&lt;!--注释语句--&gt; 
+</code></pre>
+<p>其快捷键为ctrl+/</p>
+<p>​    注释标签里的内容是写给开发人员看的，是为了让其更好地阅读并理解代码的含义，并不会显示到页面当中。</p>
+<h5 id="2-特殊字符"><a href="#2-特殊字符" class="headerlink" title="2.特殊字符"></a>2.特殊字符</h5><p>在HTML页面中，一些特殊的符号无法被直接使用，此时应该采用以下的字符来替代。</p>
+<p><img src="https://github.com/CrazyHugh/CrazyHugh.github.io/blob/main/images/special.png?raw=true" alt="special.png"></p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">CJ Hugh</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://CrazyHugh.github.io.git/2021/04/29/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/">https://CrazyHugh.github.io.git/2021/04/29/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">CJ Hugh</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2023/09/01/%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E6%A0%A1%E5%9B%AD%E6%8B%9B%E8%81%98%E9%9D%A2%E8%AF%95%20%E2%80%94%20%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%AE%9E%E4%B9%A0%E7%94%9F/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="字节跳动校园实习面试">
+                        
+                        <span class="card-title">字节跳动校园实习面试</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-09-01
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            CJ Hugh
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/04/22/%E6%8A%8A%E6%88%91%E6%91%86%E6%B8%A1%E5%88%B0%E4%B8%9C%E6%96%B9/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="把我摆渡到东方">
+                        
+                        <span class="card-title">把我摆渡到东方</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-22
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            CJ Hugh
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2023</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank">CJ Hugh</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://crazyhugh.github.io/" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:596836770@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=596836770" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 596836770" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
